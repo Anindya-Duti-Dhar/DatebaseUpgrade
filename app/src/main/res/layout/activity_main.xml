@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="duti.com.databaseupgrade.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/StudentId"
+            android:layout_above="@+id/StudentName"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:hint="Id"
+            android:gravity="center"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:imeOptions="actionDone"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/field_background_rectangle_red"/>
+
+        <EditText
+            android:id="@+id/StudentName"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:hint="Name"
+            android:gravity="center"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:imeOptions="actionDone"
+            android:layout_marginTop="16dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/field_background_rectangle_red"/>
+
+        <EditText
+            android:id="@+id/StudentAddress"
+            android:layout_below="@+id/StudentName"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:hint="Address"
+            android:gravity="center"
+            android:maxLength="250"
+            android:inputType="text"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:imeOptions="actionDone"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/field_background_rectangle_red"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/StudentAddress"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/mReadButton"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Read"/>
+
+            <Button
+                android:id="@+id/mSaveButton"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Submit"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
