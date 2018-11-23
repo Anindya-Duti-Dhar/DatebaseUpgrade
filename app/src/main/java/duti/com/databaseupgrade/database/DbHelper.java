@@ -39,6 +39,8 @@ public class DbHelper extends SQLiteOpenHelper {
         }
     }
 
+    //https://stackoverflow.com/questions/805363/how-do-i-rename-a-column-in-a-sqlite-database-table
+    //http://www.sqlitetutorial.net/sqlite-alter-table/
     //https://umeshsaravane.wordpress.com/2015/12/29/new-blog/
     //http://experiments-on-android.blogspot.com/2013/05/insert-new-column-in-table-of-sqlite.html
     //https://medium.com/@elye.project/android-sqlite-database-migration-b9ad47811d34
